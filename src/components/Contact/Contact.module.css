@@ -1,0 +1,38 @@
+.divContact {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  align-items: center;
+  width: 330px;
+}
+
+.ulContact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 190px;
+}
+
+.contactParagraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.divContact .contactButton {
+  box-sizing: border-box;
+  width: 100px;
+  height: 40px;
+  background-color: rgb(224, 225, 226);
+  align-self: center;
+  border: none;
+
+  &:hover {
+    background-color: rgb(111, 114, 114);
+    color: rgb(239, 239, 240);
+    border: none;
+  }
+}

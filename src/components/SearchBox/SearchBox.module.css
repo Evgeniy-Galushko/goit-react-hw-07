@@ -1,0 +1,21 @@
+.serchboxDiv {
+  margin-top: 15px;
+  /* border: 1.5px solid black; */
+  width: 330px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.serchboxTitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.serchboxInput {
+  margin-top: 5px;
+  width: 300px;
+  height: 35px;
+  border-radius: 4px;
+}
