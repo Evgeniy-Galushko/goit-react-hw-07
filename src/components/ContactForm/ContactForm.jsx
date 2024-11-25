@@ -4,9 +4,8 @@ import * as Yup from "yup";
 import { useId } from "react";
 import s from "./ContactForm.module.css";
 import { useDispatch } from "react-redux";
-import { nanoid } from "nanoid";
 
-import { addContact } from "../../redux/contactsSlice";
+import { addContact } from "../../redux/contactsOps";
 
 export default function ContactForm() {
   const idName = useId();
@@ -33,8 +32,7 @@ export default function ContactForm() {
   const dispatch = useDispatch();
 
   const handleSubmit = (values, actions) => {
-    const newContact = { ...values, id: nanoid(4) };
-    dispatch(addContact(newContact));
+    dispatch(addContact(values));
 
     actions.resetForm();
   };
